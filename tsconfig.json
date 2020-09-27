@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+	  "outDir": "./dist",
+	  "target": "ESNext",
+	  "module": "ESNext",
+	  "jsx": "react",
+	  "noImplicitAny": true,
+	  "allowSyntheticDefaultImports": true,
+	  "noImplicitReturns": true
+  }
+}

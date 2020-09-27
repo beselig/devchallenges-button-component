@@ -1,0 +1,24 @@
+{
+  "name": "devchallenges-button-component",
+  "version": "0.0.1",
+  "description": "My implementation of the button component challenge by devchallenges.io",
+  "main": "dist/bundle.js",
+  "repository": "git@github.com:beselig/devchallenges-button-component.git",
+  "author": "Benno Selig <selig.benno@pm.me>",
+  "scripts": {
+    "build": "webpack-cli --config config/webpack.config.js"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/react": "^16.9.49",
+    "@types/react-dom": "^16.9.8",
+    "@types/webpack": "^4.41.22",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  }
+}

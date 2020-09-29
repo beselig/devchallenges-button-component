@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-var-requires */
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
@@ -17,6 +18,18 @@ module.exports = {
         use: "ts-loader",
         exclude: "/node_modules/",
       },
+      {
+        test: /\.scss$/,
+        use: [
+          // Creates `style` nodes from JS strings
+          "style-loader",
+          // Translates CSS into CommonJS
+          "css-loader",
+          // Compiles Sass to CSS
+          "sass-loader",
+        ],
+        exclude: "/node_modules/",
+      },
     ],
   },
   output: {
@@ -28,4 +41,9 @@ module.exports = {
       template: path.join(__dirname, "../src", "index.html"),
     }),
   ],
+  devServer: {
+    contentBase: path.join(__dirname, "../dist"),
+    compress: true,
+    port: 9000,
+  },
 };

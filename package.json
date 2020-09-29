@@ -6,6 +6,7 @@
   "repository": "git@github.com:beselig/devchallenges-button-component.git",
   "author": "Benno Selig <selig.benno@pm.me>",
   "scripts": {
+	"start": "webpack-dev-server --config config/webpack.config.js",
     "build": "webpack-cli --config config/webpack.config.js",
     "format": "prettier --write src/**/*.ts{,x}",
     "lint": "tsc --noEmit && eslint src/**/*.ts{,x}"
@@ -20,6 +21,7 @@
     "@types/webpack": "^4.41.22",
     "@typescript-eslint/eslint-plugin": "^4.2.0",
     "@typescript-eslint/parser": "^4.2.0",
+    "css-loader": "^4.3.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb": "18.2.0",
     "eslint-config-airbnb-typescript": "^10.0.0",
@@ -32,9 +34,13 @@
     "eslint-plugin-react-hooks": "4.0.0",
     "html-webpack-plugin": "^4.5.0",
     "prettier": "^2.1.2",
+    "sass": "^1.26.11",
+    "sass-loader": "^10.0.2",
+    "style-loader": "^1.2.1",
     "ts-loader": "^8.0.4",
     "typescript": "^4.0.3",
     "webpack": "^4.44.2",
-    "webpack-cli": "^3.3.12"
+    "webpack-cli": "^3.3.12",
+    "webpack-dev-server": "^3.11.0"
   }
 }

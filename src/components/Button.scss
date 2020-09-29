@@ -1,0 +1,160 @@
+$primary: rgb(41, 98, 255);
+$primaryBackgroundHover: #0039cb;
+$primaryBackgroundHoverTransparent: rgba(41, 98, 255, 0.1);
+$primaryBoxShadow: rgba(41, 98, 255, 0.2);
+
+$secondary: #455A64;
+$secondaryBackgroundHover: #1C313A;
+$secondaryBoxShadow: rgba(69, 90, 100, 0.2);
+$primaryBoxShadow: rgba(41, 98, 255, 0.2);
+
+$danger: #D32F2F;
+$dangerBackgroundHover: #9A0007;
+$dangerBoxShadow: rgba(211, 47, 47, 0.2);
+
+$defaultBackground: #e0e0e0;
+$defaultBackgroundHover: #aeaeae;
+$defaultTextColor: #3f3f3f;
+
+button[class*="btn"] {
+  cursor: pointer;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  line-height: 0;
+  vertical-align: middle;
+  font-family: "Roboto";
+  font-weight: 500;
+  background: transparent;
+  border: none;
+  border-radius: 0.6rem;
+
+  /**
+   * sizes ("md" is the default)
+   */
+  &.size-sm {
+    height: 3.2rem;
+    padding: 0 1.2rem;
+  }
+  &.size-md {
+    height: 3.6rem;
+    padding: 0 1.5rem;
+  }
+  &.size-lg {
+    height: 4.2rem;
+    padding: 0 2rem;
+  }
+
+  /**
+   * colors ("color-default" is the default color ... duh)
+   */
+  &.color-default {
+    background-color: $defaultBackground;
+    box-shadow: 0 0.1em 0.2em rgba(51, 51, 51, 0.2);
+
+    &:hover,
+    &:focus {
+      background-color: $defaultBackgroundHover;
+    }
+  }
+
+  &.color-primary {
+    color: white;
+    background-color: $primary;
+    box-shadow: 0 0.1em 0.2em $primaryBoxShadow;
+
+    &:hover,
+    &:focus {
+      background-color: $primaryBackgroundHover;
+    }
+  }
+
+  &.color-secondary {
+    color: white;
+    background-color: $secondary;
+    box-shadow: 0 0.1em 0.2em $secondaryBoxShadow;
+
+    &:hover,
+    &:focus {
+      background-color: $secondaryBackgroundHover;
+    }
+  }
+
+  &.color-danger {
+    color: white;
+    background-color: $danger;
+    box-shadow: 0 0.1em 0.2em $dangerBoxShadow;
+
+    &:hover,
+    &:focus {
+      background-color: $dangerBackgroundHover;
+    }
+  }
+
+  /**
+   * "variants" add style options beyond simple coloring (no default)
+   */
+  &.outline {
+    background-color: transparent;
+    color: $primary;
+    border: 0.1rem solid $primary;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: $primaryBackgroundHoverTransparent;
+    }
+  }
+
+  &.text {
+    color: $primary;
+    background-color: transparent;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: $primaryBackgroundHoverTransparent;
+    }
+
+    &:disabled {
+      background-color: transparent;
+      color: $defaultTextColor;
+      &:hover,
+      &:focus {
+        background-color: transparent;
+      }
+    }
+  }
+
+  &.disableShadow {
+    box-shadow: none;
+  }
+
+  /**
+  * disabled style 
+  */
+  &:disabled {
+    box-shadow: none;
+    background-color: $defaultBackground;
+    color: $defaultTextColor;
+    cursor: initial;
+
+    &:hover,
+    &:focus {
+      background-color: $defaultBackground;
+    }
+  }
+
+  /**
+   * icon style
+   */
+  > i.material-icons {
+    font-size: 1.75rem;
+    vertical-align: middle;
+    &.startIcon {
+      padding-right: 1rem;
+    }
+    &.endIcon {
+      padding-left: 1rem;
+    }
+  }
+}

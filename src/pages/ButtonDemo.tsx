@@ -7,70 +7,70 @@ export const ButtonDemo = (): JSX.Element => {
     <div>
       <div className="button-ct">
         <p>{"<Button />"}</p>
-        <Button />
+        <Button text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{'<Button variant="outline" />'}</p>
-        <Button variant="outline" />
+        <Button variant="outline" text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{'<Button variant="text" />'}</p>
-        <Button variant="text" />
+        <Button variant="text" text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{"<Button disableShadow />"}</p>
-        <Button disableShadow />
+        <Button disableShadow text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{"<Button disabled />"}</p>
-        <Button disabled />
+        <Button disabled text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button variant="text" disabled />'}</p>
-        <Button variant="text" disabled />
+        <Button variant="text" disabled text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{'<Button startIcon="local_grocery_store"/>'}</p>
-        <Button startIcon="local_grocery_store" />
+        <Button startIcon="local_grocery_store" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button endIcon="local_grocery_store"/>'}</p>
-        <Button endIcon="local_grocery_store" />
+        <Button endIcon="local_grocery_store" text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{'<Button size="sm" />'}</p>
-        <Button size="sm" />
+        <Button size="sm" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button size="md" />'}</p>
-        <Button size="md" />
+        <Button size="md" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button size="lg" />'}</p>
-        <Button size="lg" />
+        <Button size="lg" text="Default" />
       </div>
       <br />
       <div className="button-ct">
         <p>{'<Button color="default" />'}</p>
-        <Button color="default" />
+        <Button color="default" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button color="primary" />'}</p>
-        <Button color="primary" />
+        <Button color="primary" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button color="secondary" />'}</p>
-        <Button color="secondary" />
+        <Button color="secondary" text="Default" />
       </div>
       <div className="button-ct">
         <p>{'<Button color="danger" />'}</p>
-        <Button color="danger" />
+        <Button color="danger" text="Default" />
       </div>
     </div>
   );

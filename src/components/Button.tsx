@@ -9,6 +9,7 @@ export const Button = ({
   startIcon,
   endIcon,
   color,
+  text,
 }: ButtonProps): JSX.Element => {
   return (
     <button
@@ -23,7 +24,7 @@ export const Button = ({
       disabled={disabled}
     >
       {startIcon ? <i className="material-icons startIcon">{startIcon}</i> : ""}
-      <span>Default</span>
+      <span>{text}</span>
       {endIcon ? <i className="material-icons endIcon">{endIcon}</i> : ""}
     </button>
   );
@@ -40,6 +41,7 @@ Button.defaultProps = {
 };
 
 export type ButtonProps = {
+  text: string;
   variant?: string;
   disableShadow?: boolean;
   disabled?: boolean;

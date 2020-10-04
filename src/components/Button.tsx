@@ -16,7 +16,7 @@ export const Button = ({
       className={`
 	    btn
 	  	color-${color}
-		${variant || ""}
+		${variant ? `variant-${variant}` : ""}
 		${disableShadow ? "disableShadow" : ""}
 		size-${size}
 		`}

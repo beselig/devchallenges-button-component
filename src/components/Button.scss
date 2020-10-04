@@ -93,7 +93,7 @@ button[class*="btn"] {
   /**
    * "variants" add style options beyond simple coloring (no default)
    */
-  &.outline {
+  &.variant-outline {
     background-color: transparent;
     color: $primary;
     border: 0.1rem solid $primary;
@@ -105,7 +105,7 @@ button[class*="btn"] {
     }
   }
 
-  &.text {
+  &.variant-text {
     color: $primary;
     background-color: transparent;
     box-shadow: none;

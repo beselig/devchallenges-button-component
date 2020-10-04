@@ -1,4 +1,14 @@
+# App bundle
 dist
+
+# npm stuff
 node_modules
 yarn-error.log
+
+# Storybook built
 storybook-static
+
+# firebase
+.firebase/
+.firebaserc
+firebase.json

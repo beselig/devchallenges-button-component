@@ -28,6 +28,10 @@ button[class*="btn"] {
   border: none;
   border-radius: 0.6rem;
 
+  > span {
+	  vertical-align: middle;
+  }
+
   /**
    * sizes ("md" is the default)
    */
@@ -134,9 +138,10 @@ button[class*="btn"] {
   */
   &:disabled {
     box-shadow: none;
+	border: none;
     background-color: $defaultBackground;
     color: $defaultTextColor;
-    cursor: initial;
+	cursor: initial;
 
     &:hover,
     &:focus {
@@ -148,7 +153,6 @@ button[class*="btn"] {
    * icon style
    */
   > i.material-icons {
-    font-size: 1.75rem;
     vertical-align: middle;
     &.startIcon {
       padding-right: 1rem;

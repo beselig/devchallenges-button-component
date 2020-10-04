@@ -23,7 +23,7 @@ export const Button = ({
       disabled={disabled}
     >
       {startIcon ? <i className="material-icons startIcon">{startIcon}</i> : ""}
-      Default
+      <span>Default</span>
       {endIcon ? <i className="material-icons endIcon">{endIcon}</i> : ""}
     </button>
   );
@@ -39,7 +39,7 @@ Button.defaultProps = {
   color: "default",
 };
 
-type ButtonProps = {
+export type ButtonProps = {
   variant?: string;
   disableShadow?: boolean;
   disabled?: boolean;
